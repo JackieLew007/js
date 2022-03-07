@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="获取" id="getBtn"/>
+	<input type="button" value="设置" id="setBtn"/>
+
+	<div id="div1">我是一个div标签
+		<p>我是一个p标签 <span>span1</span></p>
+	</div>
+
+	<div id="div2">我是一个div2标签
+		<p>我是一个p2标签 <span>span2</span></p>
+	</div>
+
+</body>
+</html>
+<script src="jquery-1.12.4.js"></script>
+<script>
+	$(function() {
+		// text();
+		$('#getBtn').click(function() {
+		 	// console.log($('#div1').text());
+
+		 	console.log($('div').text());
+		});
+		
+		$('#setBtn').click(function(){
+			// $('#div1').text('我是新设置的文本');
+			// $('#div1').text('我是新设置的文本<a>我是连接</a>');
+			$('div').text('设置的文本');
+		});		
+	});
+</script>

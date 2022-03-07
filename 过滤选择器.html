@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="oddBtn">单数选择</button>
+	<button id="evenBtn">偶数选择</button>
+	<button id="oeBtn">首尾两行</button>
+	<ul>
+		<li>我是第1个li标签</li>
+		<li>我是第2个li标签</li>
+		<li>我是第3个li标签</li>
+		<li>我是第4个li标签</li>
+		<li>我是第5个li标签</li>
+		<li>我是第6个li标签</li>
+		<li>我是第7个li标签</li>
+		<li>我是第8个li标签</li>
+		<li>我是第9个li标签</li>
+		<li>我是第10个li标签</li>
+	</ul>
+</body>
+</html>
+<script src="jquery-1.12.4.js"></script>
+<script>
+	$(function(){
+		$('#oddBtn').click(function(){
+			$('li:odd').css('backgroundColor','skyblue');
+		});
+		$('#evenBtn').click(function(){
+			$('li:even').css('backgroundColor','pink');
+		});
+		$('#oeBtn').click(function(){
+			$('li:eq(0)').css('backgroundColor','red');
+        	$('li:eq(9)').css('backgroundColor','red');
+
+		})
+	})
+
+</script>
